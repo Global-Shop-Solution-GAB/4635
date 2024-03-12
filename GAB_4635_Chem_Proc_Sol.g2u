@@ -1,0 +1,1073 @@
+Program.Sub.ScreenSU.Start
+Gui.frmChemProc..Create
+Gui.frmChemProc..Caption("Sub Process Setup")
+Gui.frmChemProc..Size(12120,7935)
+Gui.frmChemProc..MinX(12120)
+Gui.frmChemProc..MinY(7935)
+Gui.frmChemProc..Position(0,0)
+Gui.frmChemProc..BackColor(-2147483633)
+Gui.frmChemProc..MousePointer(0)
+Gui.frmChemProc..Event(UnLoad,frmChemProc_UnLoad)
+Gui.frmChemProc.cmdSave.Create(Button)
+Gui.frmChemProc.cmdSave.Size(855,375)
+Gui.frmChemProc.cmdSave.Position(11115,7230)
+Gui.frmChemProc.cmdSave.Caption("Save")
+Gui.frmChemProc.cmdSave.Event(Click,cmdSave_Click)
+Gui.frmChemProc.cmdSave.Visible(False)
+Gui.frmChemProc.GsGCChemProc.Create(GsGridControl)
+Gui.frmChemProc.GsGCChemProc.Size(11955,6615)
+Gui.frmChemProc.GsGCChemProc.Position(15,570)
+Gui.frmChemProc.GsGCChemProc.Event(CellValueChanged,GsGCChemProc_CellValueChanged)
+Gui.frmChemProc.GsGCChemProc.Event(RowCellClick,GsGCChemProc_RowCellClick)
+Gui.frmChemProc.cboChemProc.Create(ComboBox)
+Gui.frmChemProc.cboChemProc.Size(2280,330)
+Gui.frmChemProc.cboChemProc.Position(15,135)
+Gui.frmChemProc.cboChemProc.Event(Click,cboChemProc_Click)
+Gui.frmChemProc.cmdChemProcBrw.Create(Button)
+Gui.frmChemProc.cmdChemProcBrw.Size(375,375)
+Gui.frmChemProc.cmdChemProcBrw.Position(2340,105)
+Gui.frmChemProc.cmdChemProcBrw.Caption("^")
+Gui.frmChemProc.cmdChemProcBrw.Event(Click,cmdChemProcBrw_Click)
+Gui.frmChemProc.cmdNew.Create(Button)
+Gui.frmChemProc.cmdNew.Size(1215,375)
+Gui.frmChemProc.cmdNew.Position(2775,105)
+Gui.frmChemProc.cmdNew.Caption("New Process")
+Gui.frmChemProc.cmdNew.Event(Click,cmdNew_Click)
+Gui.frmChemProc.cmdSave2.Create(Button)
+Gui.frmChemProc.cmdSave2.Size(855,375)
+Gui.frmChemProc.cmdSave2.Position(11115,7230)
+Gui.frmChemProc.cmdSave2.Caption("Save")
+Gui.frmChemProc.cmdSave2.Visible(False)
+Gui.frmChemProc.cmdSave2.Event(Click,cmdSave2_Click)
+Gui.frmChemProc.cmdDelete.Create(Button)
+Gui.frmChemProc.cmdDelete.Size(1320,375)
+Gui.frmChemProc.cmdDelete.Position(4020,105)
+Gui.frmChemProc.cmdDelete.Caption("Delete Process")
+Gui.frmChemProc.cmdDelete.Event(Click,cmdDelete_Click)
+Gui.frmChemProc.txtWO.Create(TextBox,"",False,1215,300,0,9375,255,True,0,"Arial",8,-2147483643,1)
+Gui.frmChemProc.txtWO.Locked(True)
+Gui.frmChemProc.txtWO.Anchor(9)
+Gui.frmChemProc.txtSuf.Create(TextBox,"",False,480,300,0,10620,255,True,0,"Arial",8,-2147483643,1)
+Gui.frmChemProc.txtSuf.Locked(True)
+Gui.frmChemProc.txtSuf.Anchor(9)
+Gui.frmChemProc.txtSeq.Create(TextBox,"",False,840,300,0,11130,255,True,0,"Arial",8,-2147483643,1)
+Gui.frmChemProc.txtSeq.Locked(True)
+Gui.frmChemProc.txtSeq.Anchor(9)
+Gui.frmChemProc.lblWO.Create(Label,"Work Order",False,945,255,0,9495,45,True,0,"Arial",8,-2147483633,0)
+Gui.frmChemProc.lblWO.Anchor(9)
+Gui.frmChemProc.lblSuf.Create(Label,"Suffix",False,555,255,0,10590,45,True,0,"Arial",8,-2147483633,0)
+Gui.frmChemProc.lblSuf.Anchor(9)
+Gui.frmChemProc.lblSeq.Create(Label,"Seq",False,435,255,0,11340,45,True,0,"Arial",8,-2147483633,0)
+Gui.frmChemProc.lblSeq.Anchor(9)
+Gui.frmChemProc.cmdSave3.Create(Button)
+Gui.frmChemProc.cmdSave3.Visible(False)
+Gui.frmChemProc.cmdSave3.Size(855,375)
+Gui.frmChemProc.cmdSave3.Position(11115,7230)
+Gui.frmChemProc.cmdSave3.Caption("Save")
+Gui.frmChemProc.cmdSave3.Event(Click,cmdSave3_Click)
+Gui.frmProcessName..Create
+Gui.frmProcessName..Caption("Enter Process Name:")
+Gui.frmProcessName..Size(4545,1080)
+Gui.frmProcessName..MinX(0)
+Gui.frmProcessName..MinY(0)
+Gui.frmProcessName..Position(0,0)
+Gui.frmProcessName..BackColor(-2147483633)
+Gui.frmProcessName..ControlBox(False)
+Gui.frmProcessName..MaxButton(False)
+Gui.frmProcessName..MinButton(False)
+Gui.frmProcessName..MousePointer(0)
+Gui.frmProcessName..Moveable(False)
+Gui.frmProcessName..Sizeable(False)
+Gui.frmProcessName.cmdOk.Create(Button)
+Gui.frmProcessName.cmdOk.Size(855,375)
+Gui.frmProcessName.cmdOk.Position(3525,375)
+Gui.frmProcessName.cmdOk.Caption("OK")
+Gui.frmProcessName.cmdOk.Event(Click,cmdOk_Click)
+Gui.frmProcessName.txtProcessName.Create(TextBox,"",True,4320,300,0,60,60,True,0,"Arial",8,-2147483643,1)
+Gui.frmProcessName.txtProcessName.Event(KeyPressEnter,cmdOk_Click)
+Gui.frmDesc..Create
+Gui.frmDesc..Caption("Description")
+Gui.frmDesc..Size(5790,5280)
+Gui.frmDesc..MinX(0)
+Gui.frmDesc..MinY(0)
+Gui.frmDesc..Position(0,0)
+Gui.frmDesc..BackColor(-2147483633)
+Gui.frmDesc..MousePointer(0)
+Gui.frmDesc..Event(UnLoad,frmDesc_UnLoad)
+Gui.frmDesc.txtDesc.Create(TextboxM)
+Gui.frmDesc.txtDesc.Size(5670,4575)
+Gui.frmDesc.txtDesc.Position(0,0)
+Gui.frmDesc.txtDesc.Anchor(15)
+Gui.frmDesc.cmdSaveDesc.Create(Button)
+Gui.frmDesc.cmdSaveDesc.Size(855,375)
+Gui.frmDesc.cmdSaveDesc.Position(4815,4590)
+Gui.frmDesc.cmdSaveDesc.Caption("Save")
+Gui.frmDesc.cmdSaveDesc.Event(Click,cmdSaveDesc_Click)
+Gui.frmDesc.cmdSaveDesc.Anchor(10)
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+	V.Global.bSave.Declare
+	V.Global.iCSID.Declare
+	V.Global.iPROCID.Declare(Long,-1)
+	V.Global.sProcessName.Declare
+	V.Global.iRID.Declare
+	V.Global.sRouter.Declare
+	V.Global.sRouterLine.Declare
+	V.Global.fSetup.Declare
+	V.Global.iWOID.Declare
+	V.Global.sJob.Declare
+	V.Global.sSuffix.Declare
+	V.Global.sSeq.Declare
+	V.Global.iRowIndex.Declare
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+	V.Local.sIcon.Declare
+	V.Local.iRet.Declare
+	V.Local.sMsg.Declare
+	V.Local.iLen.Declare
+	V.Local.sSQL.Declare
+	
+	'Hooks: 11210, 16779, 13580, 11081, 16081, 16775, 16776, 11310, 11430, 16800, 13640
+	
+	F.Intrinsic.String.Build("{0}\GSS2.ico",V.Caller.GasDir,V.Local.sIcon)
+	Gui.frmDesc..Icon(V.Local.sIcon)
+	Gui.frmChemProc..Icon(V.Local.sIcon)
+	Gui.frmProcessName..Icon(V.Local.sIcon)
+	
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		F.Intrinsic.Control.Case(11210)
+			'Populate - Router Lines - Rename Script Button 3
+			V.Passed.000203.Set("Sub Process")
+			
+		F.Intrinsic.Control.Case(16779)
+			'Populate - Open WO (Labor Line) - Rename Script Button 3
+			V.Passed.000040.Set("Sub Process")
+			
+		F.Intrinsic.Control.Case(13580)
+			'Populate - View WO (Header) - Rename Script Button 3
+			V.Passed.000059.Set("Sub Process")
+			
+		F.Intrinsic.Control.Case(11081)
+			'Post Delete - Router Header - Delete Button
+			F.Intrinsic.String.GSSPartString(V.Passed.000014,V.Passed.000015,V.Global.sRouter)
+			F.Intrinsic.String.Build("Delete From GAB_4635_RTR_XREF Where Router = '{0}';",V.Global.sRouter.Trim,V.Local.sSQL)
+			F.ODBC.Connection!con.OpenCompanyConnection(300)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.ODBC.Connection!con.Close
+			
+		F.Intrinsic.Control.Case(16081)
+			'Post Delete - WO Header - Delete (OK) Button
+			F.Intrinsic.String.Build("Delete From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}';",V.Passed.000035,V.Passed.000017,V.Local.sSQL)
+			F.ODBC.Connection!con.OpenCompanyConnection(300)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.ODBC.Connection!con.Close
+			
+		F.Intrinsic.Control.Case(16775)
+			'Script 3 Button - Open WO (Labor Line) - Open screen and save Sub Process to selected Router and Line
+			V.Global.sJob.Set(V.Passed.008000)
+			V.Global.sSuffix.Set(V.Passed.008001)
+			F.Intrinsic.String.LPad(V.Passed.000001,"0",6,V.Global.sSeq)
+			F.Intrinsic.Control.CallSub(SetAnchors)
+			F.Intrinsic.Control.CallSub(SetContextMenus)
+			F.Intrinsic.Control.CallSub(CheckTable)
+			F.Intrinsic.Control.CallSub(LoadComboBox)
+			F.Intrinsic.Control.CallSub(CheckWOXRef)
+			F.Intrinsic.Control.CallSub(LoadDtChemProc)
+			Gui.frmChemProc.lblWO.Visible(True)
+			Gui.frmChemProc.lblSuf.Visible(True)
+			Gui.frmChemProc.lblSeq.Visible(True)
+			Gui.frmChemProc.txtWO.Visible(True)
+			Gui.frmChemProc.txtSuf.Visible(True)
+			Gui.frmChemProc.txtSeq.Visible(True)
+			Gui.frmChemProc.txtWO.Text(V.Global.sJob)
+			Gui.frmChemProc.txtSuf.Text(V.Global.sSuffix)
+			Gui.frmChemProc.txtSeq.Text(V.Global.sSeq)
+'			V.Global.bSave.Set(True)
+'			Gui.frmChemProc.cmdSave3.Visible(True)
+			Gui.frmChemProc..Show
+
+		F.Intrinsic.Control.Case(16776)
+			'Pre Delete - Open WO (Labor Line) - Delete Button
+			'Delete line from GAB_4635_WO_XREF
+			V.Global.sJob.Set(V.Passed.008000)
+			V.Global.sSuffix.Set(V.Passed.008001)
+			F.Intrinsic.String.LPad(V.Passed.000001,"0",6,V.Global.sSeq)
+			F.Intrinsic.String.Build("Do you want to delete the Sub Process for Sequence ({0})?",V.Global.sSeq,V.Local.sMsg)
+			F.Intrinsic.UI.Msgbox(V.Local.sMsg,"Delete",4,V.Local.iRet)
+			F.Intrinsic.Control.If(V.Local.iRet,=,6)
+				F.Intrinsic.Control.CallSub(DeleteWOXRef)
+			F.Intrinsic.Control.EndIf
+			
+		F.Intrinsic.Control.Case(11310)
+			'Delete Button - Router Lines - Delete selected Router and Line in XRef
+			'Delete line from GAB_4635_RTR_XREF
+			V.Global.sRouter.Set(V.Passed.008000)
+			F.Intrinsic.String.LPad(V.Passed.000111,"0",6,V.Global.sRouterLine)
+			F.Intrinsic.Control.If(V.Passed.000013,=,"Labor")
+				F.Intrinsic.String.Build("Do you want to delete the Sub Process for Router ({0}) and Line ({1})?",V.Global.sRouter,V.Global.sRouterLine,V.Local.sMsg)
+				F.Intrinsic.UI.Msgbox(V.Local.sMsg,"Delete",4,V.Local.iRet)
+				F.Intrinsic.Control.If(V.Local.iRet,=,6)
+					F.Intrinsic.Control.CallSub(DeleteRouterXRef)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			
+		F.Intrinsic.Control.Case(11430)
+			'Script 3 Button - Router Lines - Open Screen and save Sub Process to selected Router and Line
+			V.Global.sRouter.Set(V.Passed.008000)
+			F.Intrinsic.String.LPad(V.Passed.000111,"0",6,V.Global.sRouterLine)
+			'Check that Labor is selected
+			F.Intrinsic.Control.If(V.Passed.000013,<>,"Labor")
+				F.Intrinsic.UI.MsgBox("Please select Labor from the dropdown first.","Message")
+				F.Intrinsic.Control.End
+			F.Intrinsic.Control.EndIf
+			'Check that WC is not blank
+			F.Intrinsic.Control.If(V.Passed.000112,=,"")
+				F.Intrinsic.UI.MsgBox("Please select a Work Center.","Message")
+				F.Intrinsic.Control.End
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.CallSub(SetAnchors)
+			F.Intrinsic.Control.CallSub(SetContextMenus)
+			F.Intrinsic.Control.CallSub(CheckTable)
+			F.Intrinsic.Control.CallSub(LoadComboBox)
+			F.Intrinsic.Control.CallSub(CheckRouterXRef)
+			F.Intrinsic.Control.CallSub(LoadDtChemProc)
+			V.Global.bSave.Set(True)
+			Gui.frmChemProc.cmdSave2.Visible(True)
+			Gui.frmChemProc..Show
+			
+		F.Intrinsic.Control.Case(16800)
+			'OK Button - Open WO - Save RouterXRef info into WOXRef
+			V.Global.sJob.Set(V.Passed.009000)
+			V.Global.sSuffix.Set(V.Passed.009001)
+			V.Global.sRouter.Set("")
+			F.Intrinsic.Control.CallSub(SaveWOXRef)
+			
+		F.Intrinsic.Control.Case(16650)
+			'OK Button - Open WO (Header) - Save RouterXRef info into WOXRef
+			V.Global.sJob.Set(V.Passed.000003)
+			V.Global.sSuffix.Set(V.Passed.000004)
+			V.Global.sRouter.Set(V.Passed.000006)
+			F.Intrinsic.Control.CallSub(SaveWOXRef)
+			
+		F.Intrinsic.Control.Case(13640)
+			'Script 3 Button - WO View (Header) - Open Screen to view Sub Processes for Sequences
+			F.Intrinsic.String.Len(V.Passed.000001,V.Local.iLen)
+			F.Intrinsic.Control.If(V.Local.iLen,>,6)
+				F.Intrinsic.String.Left(V.Passed.000001,6,V.Global.sJob)
+				F.Intrinsic.String.Right(V.Passed.000001,3,V.Global.sSuffix)
+			F.Intrinsic.Control.Else
+				V.Global.sJob.Set(V.Passed.000001)
+			F.Intrinsic.Control.EndIf
+
+			Gui.frmChemProc.cboChemProc.Visible(False)
+			Gui.frmChemProc.cmdChemProcBrw.Visible(False)
+			Gui.frmChemProc.cmdNew.Visible(False)
+			Gui.frmChemProc.cmdDelete.Visible(False)
+			Gui.frmChemProc.cmdSave.Visible(False)
+			Gui.frmChemProc.cmdSave2.Visible(False)
+			F.Intrinsic.Control.CallSub(SetAnchors)
+			F.Intrinsic.Control.CallSub(SetContextMenus)
+			F.Intrinsic.Control.CallSub(LoadSubProcessView)
+			Gui.frmChemProc..Show
+			
+		F.Intrinsic.Control.CaseElse
+			'For Custom Menu item to edit and add Sub Processes
+			F.Intrinsic.Control.CallSub(SetAnchors)
+			F.Intrinsic.Control.CallSub(SetContextMenus)
+			F.Intrinsic.Control.CallSub(CheckTable)
+			F.Intrinsic.Control.CallSub(LoadComboBox)
+			V.Global.bSave.Set(True)
+			Gui.frmChemProc.cmdSave.Visible(True)
+			Gui.frmChemProc..Show
+	F.Intrinsic.Control.EndSelect
+Program.Sub.Main.End
+
+Program.Sub.frmChemProc_UnLoad.Start
+	F.Intrinsic.Control.End
+Program.Sub.frmChemProc_UnLoad.End
+
+Program.Sub.SetAnchors.Start
+	'0 - None
+	'1 - Top
+	'2 - Bottom
+	'4 - Left
+	'8 - Right
+	
+	Gui.frmChemProc.cboChemProc.Anchor(5)
+	Gui.frmChemProc.cmdChemProcBrw.Anchor(5)
+	Gui.frmChemProc.GsGCChemProc.Anchor(15)
+	Gui.frmChemProc.cmdSave.Anchor(10)
+Program.Sub.SetAnchors.End
+
+Program.Sub.SetContextMenus.Start
+	Gui.frmChemProc..ContextMenuCreate("CTXCP")
+	F.Intrinsic.Control.If(V.Caller.Hook,<>,16775)
+		Gui.frmChemProc..ContextMenuAddItem("CTXCP","ADD",0,"Add Line")
+		Gui.frmChemProc..ContextMenuAddItem("CTXCP","DELETE",0,"Delete Line")
+		Gui.frmChemProc..ContextMenuSetItemEventHandler("CTXCP","ADD","MenuClick")
+		Gui.frmChemProc..ContextMenuSetItemEventHandler("CTXCP","DELETE","MenuClick")
+		Gui.frmChemProc..ContextMenuAddItem("CTXCP","CLEAR",0,"Clear Screen")
+		Gui.frmChemProc..ContextMenuSetItemEventHandler("CTXCP","CLEAR","MenuClick")
+	F.Intrinsic.Control.EndIf
+	Gui.frmChemProc..ContextMenuAddItem("CTXCP","EXPORT",0,"Export")
+	Gui.frmChemProc..ContextMenuSetItemEventHandler("CTXCP","EXPORT","MenuClick")
+	
+	Gui.frmChemProc..ContextMenuCreate("CTXVIEW")
+	Gui.frmChemProc..ContextMenuAddItem("CTXVIEW","EXPORT",0,"Export")
+	Gui.frmChemProc..ContextMenuSetItemEventHandler("CTXVIEW","EXPORT","MenuClick")
+Program.Sub.SetContextMenus.End
+
+Program.Sub.CheckTable.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+	
+	V.Local.bExists.Declare
+
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	'GAB_4635_CHEM_SETUP
+	F.ODBC.Connection!con.TableExists("GAB_4635_CHEM_SETUP",V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GAB_4635_CHEM_SETUP(CSID IDENTITY,PROCID INTEGER,PROCESS_NAME VARCHAR(50),STEPS SMALLINT,CHEMICAL VARCHAR(50),PCS_PER_RACK SMALLINT,DURATION INTEGER,INTERVAL VARCHAR(10),DESCRIPTION LONGVARCHAR,PRIMARY KEY(CSID));")
+	F.Intrinsic.Control.EndIf
+	'GAB_4635_RTR_XREF
+	F.ODBC.Connection!con.TableExists("GAB_4635_RTR_XREF",V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GAB_4635_RTR_XREF(RID IDENTITY,ROUTER CHAR(20),ROUTER_LINE CHAR(6),PROCID INTEGER,PRIMARY KEY(RID));")
+	F.Intrinsic.Control.EndIf
+	'GAB_4635_WO_XREF
+	F.ODBC.Connection!con.TableExists("GAB_4635_WO_XREF",V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists,=,False)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GAB_4635_WO_XREF(WOID IDENTITY,JOB CHAR(6),SUFFIX CHAR(3),SEQ CHAR(6),PROCID INTEGER,ROUTER CHAR(20),RID INTEGER,PRIMARY KEY(WOID));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.Close
+	
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.CheckTable.End
+
+Program.Sub.LoadComboBox.Start
+	F.Intrinsic.Control.If(V.DataTable.dtChemLoad.Exists)
+		F.Data.DataTable.Close("dtChemLoad")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Data.DataTable.CreateFromSQL("dtChemLoad","con","Select Distinct Process_Name From GAB_4635_CHEM_SETUP Union Select '' As Process_Name From GAB_4635_CHEM_SETUP Order by Process_Name;",True)
+	F.Intrinsic.Control.BlockEvents
+	Gui.frmChemProc.cboChemProc.AddItems("DataTable","dtChemLoad","Process_Name","Process_Name")
+	Gui.frmChemProc.cboChemProc.Text("")
+	F.Intrinsic.Control.UnBlockEvents
+	F.ODBC.Connection!con.Close
+Program.Sub.LoadComboBox.End
+
+Program.Sub.cboChemProc_Click.Start
+	V.Local.sSQl.Declare
+	
+	F.Intrinsic.Control.If(V.Screen.frmChemProc!cboChemProc.Text,<>,"")
+		F.Intrinsic.Control.If(V.DataTable.dtChemProcID.Exists)
+			F.Data.DataTable.Close("dtChemProcID")
+		F.Intrinsic.Control.EndIf
+		
+		F.ODBC.Connection!con.OpenCompanyConnection(300)
+		V.Global.sProcessName.Set(V.Screen.frmChemProc!cboChemProc.Text)
+		F.Intrinsic.String.Build("Select * From GAB_4635_CHEM_SETUP Where Process_Name = '{0}';",V.Global.sProcessName,V.Local.sSQl)
+		F.Data.DataTable.CreateFromSQL("dtChemProcID","con",V.Local.sSQl,True)
+		F.ODBC.Connection!con.Close
+		F.Intrinsic.Control.If(V.DataTable.dtChemProcID.RowCount,>,0)
+			V.Global.iPROCID.Set(V.DataTable.dtChemProcID(0).PROCID!FieldVal)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.CallSub(LoadDtChemProc)
+	F.Intrinsic.Control.Else
+		Gui.frmChemProc.cboChemProc.Text(V.Global.sProcessName)
+	F.Intrinsic.Control.EndIf
+Program.Sub.cboChemProc_Click.End
+
+Program.Sub.cmdChemProcBrw_Click.Start
+	V.Local.sRet.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.UI.Browser("Select Process","con","Select Distinct ProcID,Process_Name From GAB_4635_CHEM_SETUP Order by Process_Name;","ID*!*Process Name","25*!*800",V.Local.sRet)
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		V.Global.iPROCID.Set(V.Local.sRet(0))
+		V.Global.sProcessName.Set(V.Local.sRet(1))
+		Gui.frmChemProc.cboChemProc.Text(V.Global.sProcessName)
+	F.Intrinsic.Control.EndIf
+Program.Sub.cmdChemProcBrw_Click.End
+
+Program.Sub.LoadDtChemProc.Start
+	V.Local.iRet.Declare
+	V.Local.sSQL.Declare
+	V.Local.sCaption.Declare
+	
+	F.Intrinsic.Control.If(V.DataTable.dtChemProc.Exists)
+		F.Intrinsic.Control.If(V.Global.bSave,=,False)
+			F.Intrinsic.UI.Msgbox("Save Changes?","Save Changes?",4,V.Local.iRet)
+			F.Intrinsic.Control.If(V.Local.iRet,=,6)
+				F.Intrinsic.Control.CallSub(cmdSave_Click,"Global","Save")
+			F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.Close("dtChemProc")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Select * From GAB_4635_CHEM_SETUP Where PROCID = {0} Order By Steps;",V.Global.iPROCID,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtChemProc","con",V.Local.sSQL,True)
+	F.Data.DataTable.AddColumn("dtChemProc","Descr_Button",String,"View")
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.If(V.DataTable.dtChemProc.RowCount,<>,0)
+		F.Intrinsic.Control.BlockEvents
+		V.Global.sProcessName.Set(V.DataTable.dtChemProc(0).PROCESS_NAME!FieldVal)
+		Gui.frmChemProc.cboChemProc.Text(V.Global.sProcessName)
+		F.Intrinsic.String.Build("Sub Process Setup for {0}",V.Global.sProcessName,V.Local.sCaption)
+		Gui.frmChemProc..Caption(V.Local.sCaption)
+		F.Intrinsic.Control.UnBlockEvents
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.CallSub(LoadGvChemProc)
+Program.Sub.LoadDtChemProc.End
+
+Program.Sub.LoadGvChemProc.Start
+	V.Local.sValues.Declare
+	
+	Gui.frmChemProc.GsGCChemProc.ContextMenuAttach("CTXCP")
+	
+	Gui.frmChemProc.GsGCChemProc.AddGridViewFromDataTable("gvChemProc","dtChemProc")
+	Gui.frmChemProc.GsGCChemProc.MainView("gvChemProc")
+	Gui.frmChemProc.GsGCChemProc.SuspendLayout()
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","MultiSelect",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","AllowSort",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","AllowFilter",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","ShowGroupPanel",False)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","EnableAppearanceOddRow",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","OptionsMenuShowAutoFilterRowItem",False)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","Visible",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","Visible",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","Visible",False)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","ShowCaption",False)
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.ODBC.Connection!con.ExecuteAndReturn("Select RTrim(Machine)+' -- '+RTrim(Operation)+' -- '+RTrim(Description) From Op_Codes Where LMO = 'L' Order By Machine,Operation;",V.Local.sValues)
+	F.Intrinsic.String.Replace(V.Local.sValues,"#$#","*!*",V.Local.sValues)
+	F.ODBC.Connection!con.Close
+	Gui.frmChemProc.GsGCChemProc.ColumnEdit("gvChemProc","Chemical","Combobox",V.Local.sValues)
+	Gui.frmChemProc.GsGCChemProc.ColumnEdit("gvChemProc","Interval","DropDownList","Second(s)*!*Minute(s)*!*Hour(s)*!*Day(s)")
+
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","Caption","CSID")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","Caption","PROCID")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","Caption","Process Name")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","Caption","Steps")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","Caption","Sub Process")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","Caption","Pcs per Rack")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","Caption","Duration")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","Caption","Interval")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","Caption","Description")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","Caption","View")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","AllowEdit",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","AllowEdit",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","AllowEdit",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","AllowEdit",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","AllowEdit",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","AllowEdit",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","AllowEdit",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","AllowEdit",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","AllowEdit",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","AllowEdit",False)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","ReadOnly",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","ReadOnly",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","ReadOnly",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","ReadOnly",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","ReadOnly",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","ReadOnly",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","ReadOnly",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","ReadOnly",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","ReadOnly",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","ReadOnly",True)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","MinWidth","60")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","MinWidth","60")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","MinWidth","100")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","MinWidth","60")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","MinWidth","120")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","MinWidth","80")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","MinWidth","80")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","MinWidth","80")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","MinWidth","200")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","MinWidth","40")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","HeaderFontBold",True)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","HeaderHAlignment","Center")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","CSID","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","CellHAlignment","Center")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","CellBackColor","Gray")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Descr_Button","CellForeColor","White")
+
+	Gui.frmChemProc.GsGCChemProc.ResumeLayout()
+Program.Sub.LoadGvChemProc.End
+
+Program.Sub.cmdNew_Click.Start
+	Gui.frmProcessName..Show
+	Gui.frmProcessName.txtProcessName.SetFocus
+Program.Sub.cmdNew_Click.End
+
+Program.Sub.cmdDelete_Click.Start
+	V.Local.sSQL.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		F.Intrinsic.Control.Case(16775)
+			F.Intrinsic.String.Build("Delete From GAB_4635_WO_XREF Where WOID = '{0}';",V.Global.iWOID,V.Local.sSQL)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.Intrinsic.String.Build("Delete From GAB_4635_RTR_XREF Where RID = '{0}';",V.Global.iRID,V.Local.sSQL)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.ODBC.Connection!con.Close
+			F.Intrinsic.Control.End
+		F.Intrinsic.Control.CaseElse
+			F.Intrinsic.String.Build("Delete From GAB_4635_CHEM_SETUP Where PROCID = '{0}';",V.Global.iPROCID,V.Local.sSQL)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			F.ODBC.Connection!con.Close
+			F.Data.DataTable.DeleteRow("dtChemProc")
+			F.Intrinsic.Control.BlockEvents
+			Gui.frmChemProc.cboChemProc.Text("")
+			F.Intrinsic.Control.UnBlockEvents
+			F.Intrinsic.Control.CallSub(LoadGvChemProc)
+			F.Intrinsic.Control.CallSub(LoadComboBox)
+			Gui.frmChemProc..Caption("Sub Process Setup")
+			Gui.frmChemProc.cboChemProc.Enabled(True)
+			Gui.frmChemProc.cmdChemProcBrw.Enabled(True)
+			Gui.frmChemProc.cmdNew.Enabled(True)
+	F.Intrinsic.Control.EndSelect	
+Program.Sub.cmdDelete_Click.End
+
+Program.Sub.cmdOk_Click.Start
+	V.Local.sCaption.Declare
+	V.Local.iRet.Declare
+	
+	V.Global.sProcessName.Set(V.Screen.frmProcessName!txtProcessName.Text)
+	Gui.frmProcessName.txtProcessName.Text("")
+	
+	F.Intrinsic.Control.If(V.Global.sProcessName,<>,"")
+		F.Intrinsic.String.Build("Sub Process Setup for {0}",V.Global.sProcessName,V.Local.sCaption)
+		Gui.frmChemProc..Caption(V.Local.sCaption)
+
+		F.Intrinsic.Control.If(V.DataTable.dtChemProc.Exists)
+			F.Intrinsic.Control.If(V.Global.bSave,=,False)
+				F.Intrinsic.UI.Msgbox("Save Changes?","Save Changes?",4,V.Local.iRet)
+				F.Intrinsic.Control.If(V.Local.iRet,=,6)
+					F.Intrinsic.Control.CallSub(cmdSave_Click)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+			Gui.frmChemProc.GsGCChemProc.ClearRows("gvChemProc")
+			F.Data.DataTable.Close("dtChemProc")
+		F.Intrinsic.Control.EndIf
+		
+		F.ODBC.Connection!con.OpenCompanyConnection(300)
+		F.Data.DataTable.CreateFromSQL("dtChemProc","con","Select * From GAB_4635_CHEM_SETUP Where CSID = -1;",True)
+		F.Data.DataTable.AddColumn("dtChemProc","Descr_Button",String,"View")
+		F.ODBC.Connection!con.ExecuteAndReturn("Select MAX(CSID) From GAB_4635_CHEM_SETUP;",V.Global.iCSID)
+		V.Global.iPROCID.Set(-1)
+		F.Data.DataTable.AddRow("dtChemProc","CSID",V.Global.iCSID.++,"PROCID",V.Global.iPROCID,"PROCESS_NAME",V.Global.sProcessName,"STEPS",1)
+		F.ODBC.Connection!con.Close
+		F.Intrinsic.Control.CallSub(LoadGvChemProc)
+	F.Intrinsic.Control.EndIf
+	
+	Gui.frmProcessName..Visible(False)
+Program.Sub.cmdOk_Click.End
+
+Program.Sub.MenuClick.Start
+	V.Local.iStep.Declare
+	V.Local.iRow.Declare
+	V.Local.bExcel.Declare
+	V.Local.sFileExport.Declare
+	V.Local.bFileLocked.Declare
+	V.Local.sMsg.Declare
+
+	F.Intrinsic.Control.SelectCase(V.Args.ItemName)
+		F.Intrinsic.Control.Case("ADD")
+			V.Global.bSave.Set(False)
+			F.Data.DataTable.Compute("dtChemProc","MAX(STEPS)","",V.Local.iStep)
+			F.Data.DataTable.Compute("dtChemProc","MAX(CSID)","",V.Global.iCSID)
+			F.Data.DataTable.AddRow("dtChemProc","CSID",V.Global.iCSID.++,"PROCID",V.Global.iPROCID,"PROCESS_NAME",V.Global.sProcessName,"STEPS",V.Local.iStep.++)
+			
+		F.Intrinsic.Control.Case("DELETE")
+			V.Global.bSave.Set(False)
+			Gui.frmChemProc.GsGCChemProc.GetSelectedRows("gvChemProc",V.Local.iRow)
+			F.Data.DataTable.DeleteRow("dtChemProc",V.Local.iRow)
+			F.Intrinsic.Control.For(V.Local.iRow,0,V.DataTable.dtChemProc.RowCount--,1)
+				V.Local.iStep.Set(V.Local.iRow)
+				F.Data.DataTable.Compute("dtChemProc","MAX(CSID)","",V.Global.iCSID)
+				F.Data.DataTable.SetValue("dtChemProc",V.Local.iRow,"CSID",V.Global.iCSID.++,"STEPS",V.Local.iStep.++)
+			F.Intrinsic.Control.Next(V.Local.iRow)
+		
+		F.Intrinsic.Control.Case("CLEAR")
+			F.Data.DataTable.DeleteRow("dtChemProc")
+			F.Intrinsic.Control.CallSub(LoadGvChemProc)
+		
+		F.Intrinsic.Control.Case("EXPORT")
+			F.Automation.MSExcel.CheckPresence(V.Local.bExcel)
+			F.Intrinsic.Control.If(V.Local.bExcel)
+				F.Intrinsic.String.Build("{0}\GAB_{1}_Export.xlsx",V.Caller.LocalGssTempDir,V.Local.sFileExport)
+				F.Intrinsic.File.IsFileLocked(V.Local.sFileExport,V.Local.bFileLocked)
+				F.Intrinsic.Control.If(V.Local.bFileLocked)
+					F.Intrinsic.String.Build("File is already open. Please close and export again.{0}File: {1}",V.Ambient.NewLine,V.Local.sFileExport,V.Local.sMsg)
+					F.Intrinsic.UI.Msgbox(V.Local.sMsg,"File In Use")
+				F.Intrinsic.Control.Else
+					Gui.frmChemProc.GsGCChemProc.Export(V.Local.sFileExport,"xlsx")
+					F.Intrinsic.Task.ShellExec(0,"",V.Local.sFileExport,"","",1)
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.Else
+				F.Intrinsic.String.Build("{0}\GAB_{1}_Export.csv",V.Caller.LocalGssTempDir,V.Local.sFileExport)
+				F.Intrinsic.File.IsFileLocked(V.Local.sFileExport,V.Local.bFileLocked)
+				F.Intrinsic.Control.If(V.Local.bFileLocked)
+					F.Intrinsic.String.Build("File is already open. Please close and export again.{0}File: {1}",V.Ambient.NewLine,V.Local.sFileExport,V.Local.sMsg)
+					F.Intrinsic.UI.Msgbox(V.Local.sMsg,"File In Use")
+				F.Intrinsic.Control.Else
+					Gui.frmChemProc.GsGCChemProc.Export(V.Local.sFileExport,"csv")
+				F.Intrinsic.Control.EndIf
+				F.Intrinsic.Task.ShellExec(0,"",V.Local.sFileExport,"","",1)
+			F.Intrinsic.Control.EndIf
+		
+	F.Intrinsic.Control.EndSelect
+Program.Sub.MenuClick.End
+
+Program.Sub.cmdSave_Click.Start
+	V.Local.bArgs.Declare
+	
+	F.Intrinsic.Control.If(V.DataTable.dtChemProc.Exists)
+		F.ODBC.Connection!con.OpenCompanyConnection(300)
+		F.Intrinsic.Control.If(V.Global.iPROCID,=,-1)
+			F.ODBC.Connection!con.ExecuteAndReturn("Select MAX(PROCID) From GAB_4635_CHEM_SETUP;",V.Global.iPROCID)
+			F.Intrinsic.Math.Add(V.Global.iPROCID,1,V.Global.iPROCID)
+			F.Data.DataTable.SetValue("dtChemProc",-1,"PROCID",V.Global.iPROCID)
+		F.Intrinsic.Control.EndIf
+		F.Data.DataTable.RemoveColumn("dtChemProc","Descr_Button")
+		F.Data.DataTable.SaveToDB("dtChemProc","con","GAB_4635_CHEM_SETUP","CSID*!*PROCESS_NAME*!*STEPS")
+		F.ODBC.Connection!con.Close
+		V.Global.bSave.Set(True)
+		F.Intrinsic.UI.Msgbox("Save Complete.","Save")
+		F.Data.DataTable.DeleteRow("dtChemProc")
+		F.Intrinsic.Variable.ArgExists("GLOBAL",V.Local.bArgs)
+		F.Intrinsic.Control.If(V.Local.bArgs,=,False)
+			F.Intrinsic.Control.BlockEvents
+			Gui.frmChemProc.cboChemProc.Text("")
+			F.Intrinsic.Control.UnBlockEvents
+			F.Data.DataTable.AddColumn("dtChemProc","Descr_Button",String,"View")
+			F.Intrinsic.Control.CallSub(LoadGvChemProc)
+			F.Intrinsic.Control.CallSub(LoadComboBox)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.Control.CallSub(cboChemProc_Click)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.GsGCChemProc_RowCellClick.Start
+	V.Local.sCaption.Declare
+	
+	V.Global.iRowIndex.Set(V.Args.RowIndex)
+	F.Intrinsic.Control.SelectCase(V.Args.Column)
+		F.Intrinsic.Control.Case("Descr_Button")
+			Gui.frmDesc.txtDesc.Text(V.DataTable.dtChemProc(V.Global.iRowIndex).Description!FieldVal)
+			F.Intrinsic.String.Build("Description ({0})",V.DataTable.dtChemProc(V.Global.iRowIndex).Chemical!FieldVal,V.Local.sCaption)
+			Gui.frmDesc..Caption(V.Local.sCaption)
+			Gui.frmDesc..Show
+	F.Intrinsic.Control.EndSelect
+Program.Sub.GsGCChemProc_RowCellClick.End
+
+Program.Sub.GsGCChemProc_CellValueChanged.Start
+	V.Local.bIsInString.Declare
+	V.Local.sText.Declare
+	V.Local.sSQL.Declare
+	V.Local.sDescription.Declare
+	
+	V.Global.bSave.Set(False)
+	
+	F.Intrinsic.Control.SelectCase(V.Args.Column)
+		F.Intrinsic.Control.Case("CHEMICAL")
+			F.Intrinsic.String.IsInString(V.Args.Value," -- ",True,V.Local.bIsInString)
+			F.Intrinsic.Control.If(V.Local.bIsInString)
+				F.Intrinsic.String.Split(V.Args.Value," -- ",V.Local.sText)
+				
+				F.Intrinsic.Control.If(V.Caller.GSSVersion,>=,2016.2)
+					Gui.frmChemProc.GsGCChemProc.SetCellValueByColumnName("gvChemProc","Chemical",V.Args.RowIndex,V.Local.sText(1))
+					F.ODBC.Connection!con.OpenCompanyConnection(300)
+					F.Intrinsic.String.Build("Select Text From OpCode_Text Where LMO = 'L' And Machine = '{0}' And Operation = '{1}' Order By Operation;",V.Local.sText(0),V.Local.sText(1),V.Local.sSQL)
+					F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Local.sDescription)
+					F.ODBC.Connection!con.Close
+					F.Intrinsic.String.Build("{0}{1}{2}",V.Local.sText(2).Trim,V.Ambient.NewLine,V.Local.sDescription,V.Local.sDescription)
+					Gui.frmChemProc.GsGCChemProc.SetCellValueByColumnName("gvChemProc","Description",V.Args.RowIndex,V.Local.sDescription)
+				F.Intrinsic.Control.Else
+					Gui.frmChemProc.GsGCChemProc.SetCellValueByColumnName("gvChemProc","Chemical",V.Args.RowIndex,V.Local.sText(1))
+					Gui.frmChemProc.GsGCChemProc.SetCellValueByColumnName("gvChemProc","Description",V.Args.RowIndex,V.Local.sText(2))
+				F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndSelect
+Program.Sub.GsGCChemProc_CellValueChanged.End
+
+Program.Sub.cmdSaveDesc_Click.Start
+	F.Data.DataTable.SetValue("dtChemProc",V.Global.iRowIndex,"Description",V.Screen.frmDesc!txtDesc.Text)
+	Gui.frmDesc..Visible(False)
+Program.Sub.cmdSaveDesc_Click.End
+
+Program.Sub.frmDesc_UnLoad.Start
+	Gui.frmDesc..Visible(False)
+Program.Sub.frmDesc_UnLoad.End
+
+Program.Sub.CheckRouterXRef.Start
+	V.Local.sSQL.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Select * From GAB_4635_RTR_XREF Where Router = '{0}' And Router_Line = '{1}';",V.Global.sRouter,V.Global.sRouterLine,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtRouterXRef","con",V.Local.sSQL,True)
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.If(V.DataTable.dtRouterXRef.RowCount,=,0)
+		V.Global.iPROCID.Set(-1)
+		V.Global.iRID.Set(-1)
+		F.Data.DataTable.AddRow("dtRouterXRef","RID",V.Global.iRID,"ROUTER",V.Global.sRouter,"ROUTER_LINE",V.Global.sRouterLine,"PROCID",V.Global.iPROCID)
+	F.Intrinsic.Control.Else
+		V.Global.iPROCID.Set(V.DataTable.dtRouterXRef(0).PROCID!FieldVal)
+		V.Global.iRID.Set(V.DataTable.dtRouterXRef(0).RID!FieldVal)
+	F.Intrinsic.Control.EndIf
+Program.Sub.CheckRouterXRef.End
+
+Program.Sub.CheckWOXRef.Start
+	V.Local.sSQL.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Select * From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}' And Seq = '{2}';",V.Global.sJob,V.Global.sSuffix,V.Global.sSeq,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtWOXRef","con",V.Local.sSQL,True)
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.If(V.DataTable.dtWOXRef.RowCount,=,0)
+		V.Global.iPROCID.Set(-1)
+		V.Global.iWOID.Set(-1)
+		F.Data.DataTable.AddRow("dtWOXRef","WOID",V.Global.iWOID,"JOB",V.Global.sJob,"SUFFIX",V.Global.sSuffix,"SEQ",V.Global.sSeq,"PROCID",V.Global.iPROCID,"ROUTER","")
+		Gui.frmChemProc.cboChemProc.Enabled(False)
+		Gui.frmChemProc.cmdChemProcBrw.Enabled(False)
+		Gui.frmChemProc.cmdNew.Enabled(False)
+		F.Intrinsic.UI.Msgbox("No Sub Process available for this sequence.","Sub Process")
+		F.Intrinsic.Control.End
+	F.Intrinsic.Control.Else
+		V.Global.iPROCID.Set(V.DataTable.dtWOXRef(0).PROCID!FieldVal)
+		V.Global.iWOID.Set(V.DataTable.dtWOXRef(0).WOID!FieldVal)
+		V.Global.iRID.Set(V.DataTable.dtWOXRef(0).RID!FieldVal)
+		Gui.frmChemProc.cboChemProc.Enabled(False)
+		Gui.frmChemProc.cmdChemProcBrw.Enabled(False)
+		Gui.frmChemProc.cmdNew.Enabled(False)
+	F.Intrinsic.Control.EndIf
+Program.Sub.CheckWOXRef.End
+
+Program.Sub.cmdSave2_Click.Start
+	V.Local.iPROCID.Declare
+	V.Local.sProcessName.Declare
+
+	'Save Global Data
+	V.Local.iPROCID.Set(V.DataTable.dtChemProc(0).PROCID!FieldVal)
+	V.Local.sProcessName.Set(V.DataTable.dtChemProc(0).PROCESS_NAME!FieldVal)
+	'Save data to setup table
+	F.Intrinsic.Control.CallSub(cmdSave_Click)
+	'Save to router table
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.Control.If(V.Global.iRID,=,-1)
+		F.ODBC.Connection!con.ExecuteAndReturn("Select MAX(RID) From GAB_4635_RTR_XREF;",V.Global.iRID)
+		F.Data.DataTable.SetValue("dtRouterXRef",-1,"RID",V.Global.iRID.++)
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.SetValue("dtRouterXRef",-1,"PROCID",V.Local.iPROCID)
+	F.Data.DataTable.SaveToDB("dtRouterXRef","con","GAB_4635_RTR_XREF","RID*!*ROUTER*!*ROUTER_LINE")
+	F.ODBC.Connection!con.Close
+	'Calculate Setup
+	F.Intrinsic.Control.CallSub(CalculateSetup,"PROCID",V.Local.iPROCID)
+	'Save Descriptions from Sub Process to GSS
+	F.Intrinsic.Control.CallSub(UpdateGSSDescriptions,"PROCID",V.Local.iPROCID)
+	'Save values to Router Screen
+	V.Passed.000116.Set(V.Global.fSetup)'Setup
+	V.Passed.000121.Set(V.Local.sProcessName)'Description
+	'Close screen
+	F.Intrinsic.Control.CallSub(frmChemProc_UnLoad)
+Program.Sub.cmdSave2_Click.End
+
+Program.Sub.CalculateSetup.Start
+	V.Local.sSQL.Declare
+	V.Local.iCnt.Declare
+	V.Local.fRet.Declare
+	
+	F.Intrinsic.Control.If(V.DataTable.dtChemCalc.Exists)
+		F.Data.DataTable.Close("dtChemCalc")
+	F.Intrinsic.Control.EndIf
+
+	V.Global.fSetup.Set(0)
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Select * From GAB_4635_CHEM_SETUP Where PROCID = {0};",V.Args.PROCID,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtChemCalc","con",V.Local.sSQL,True)
+	F.ODBC.Connection!con.Close
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtChemCalc.RowCount--,1)
+		F.Intrinsic.Control.SelectCase(V.DataTable.dtChemCalc(V.Local.iCnt).Interval!FieldValTrim)
+			F.Intrinsic.Control.Case("Second(s)")
+				F.Intrinsic.Math.Div(V.DataTable.dtChemCalc(V.Local.iCnt).Duration!FieldVal,3600,V.Local.fRet)
+			F.Intrinsic.Control.Case("Minute(s)")
+				F.Intrinsic.Math.Div(V.DataTable.dtChemCalc(V.Local.iCnt).Duration!FieldVal,60,V.Local.fRet)
+			F.Intrinsic.Control.Case("Hour(s)")
+				V.Local.fRet.Set(V.DataTable.dtChemCalc(V.Local.iCnt).Duration!FieldVal)
+			F.Intrinsic.Control.Case("Day(s)")
+				F.Intrinsic.Math.Mult(V.DataTable.dtChemCalc(V.Local.iCnt).Duration!FieldVal,24,V.Local.fRet)
+		F.Intrinsic.Control.EndSelect
+		F.Intrinsic.Math.Add(V.Global.fSetup,V.Local.fRet,V.Global.fSetup)
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+Program.Sub.CalculateSetup.End
+
+Program.Sub.UpdateGSSDescriptions.Start
+	F.Intrinsic.Control.Try
+	V.Local.sError.Declare
+
+	V.Local.sSQL.Declare
+	V.Local.iCnt.Declare
+	V.Local.sDesc.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	
+	'Gather Descriptions from Sub Process
+	F.Intrinsic.String.Build("Select Steps,Chemical,Description From GAB_4635_CHEM_SETUP Where ProcID = {0} Order By Steps;",V.Args.PROCID,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtSubDesc","con",V.Local.sSQL,True)
+	F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtSubDesc.RowCount--,1)
+		F.Intrinsic.Control.If(V.Local.iCnt,=,0)
+			F.Intrinsic.String.Build("Step #{1} - {2}{0}{3}",V.Ambient.NewLine,V.DataTable.dtSubDesc(V.Local.iCnt).Steps!FieldVal,V.DataTable.dtSubDesc(V.Local.iCnt).Chemical!FieldVal,V.DataTable.dtSubDesc(V.Local.iCnt).Description!FieldValTrim,V.Local.sDesc)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{1}{0}{0}Step #{2} - {3}{0}{4}",V.Ambient.NewLine,V.Local.sDesc,V.DataTable.dtSubDesc(V.Local.iCnt).Steps!FieldVal,V.DataTable.dtSubDesc(V.Local.iCnt).Chemical!FieldVal,V.DataTable.dtSubDesc(V.Local.iCnt).Description!FieldValTrim,V.Local.sDesc)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	F.Data.DataTable.Close("dtSubDesc")
+	
+	'Save Descriptions from Sub Process to GSS
+	F.Intrinsic.String.Build("Select * From RTR_SEQ_COMMENTS Where Rtr_Number = '{0}' And Rtr_Seq = '{1}';",V.Global.sRouter,V.Global.sRouterLine,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtSaveDesc","con",V.Local.sSQL,True)
+	F.Intrinsic.Control.If(V.DataTable.dtSaveDesc.RowCount,=,0)
+		F.Data.DataTable.AddRow("dtSaveDesc","TEXT",V.Local.sDesc)
+	F.Intrinsic.Control.Else
+		F.Data.DataTable.SetValue("dtSaveDesc",0,"TEXT",V.Local.sDesc)
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.SaveToDB("dtSaveDesc","con","RTR_SEQ_COMMENTS","Rtr_Number*!*Rtr_Seq")
+	F.Data.DataTable.Close("dtSaveDesc")
+	
+	F.ODBC.Connection!con.Close
+
+	F.Intrinsic.Control.Catch
+		F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Ambient.ScriptPath,V.Ambient.Newline,V.Ambient.CurrentSubroutine,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+		F.Intrinsic.UI.Msgbox(V.Local.sError)
+		F.Intrinsic.Control.End 
+	F.Intrinsic.Control.EndTry
+Program.Sub.UpdateGSSDescriptions.End
+
+Program.Sub.DeleteRouterXRef.Start
+	V.Local.sSQL.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Delete From GAB_4635_RTR_XREF Where Router = '{0}' And Router_Line = '{1}';",V.Global.sRouter,V.Global.sRouterLine,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	F.ODBC.Connection!con.Close
+Program.Sub.DeleteRouterXRef.End
+
+Program.Sub.DeleteWOXRef.Start
+	V.Local.sSQL.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Select WOID From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}' And Seq = '{2}';",V.Global.sJob,V.Global.sSuffix,V.Global.sSeq,V.Local.sSQL)
+	F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.iWOID)
+	F.Intrinsic.String.Build("Delete From GAB_4635_WO_XREF Where WOID = '{0}';",V.Global.iWOID,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	F.Intrinsic.String.Build("Select RID From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}' And Seq = '{2}';",V.Global.sJob,V.Global.sSuffix,V.Global.sSeq,V.Local.sSQL)
+	F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.iRID)
+	F.Intrinsic.String.Build("Delete From GAB_4635_RTR_XREF Where RID = '{0}';",V.Global.iRID,V.Local.sSQL)
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	F.ODBC.Connection!con.Close
+Program.Sub.DeleteWOXRef.End
+
+Program.Sub.SaveWOXRef.Start
+	V.Local.sSQL.Declare
+	V.Local.iWOID.Declare
+	V.Local.iCnt.Declare
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.Control.If(V.Global.sRouter,=,"")
+		F.Intrinsic.String.Build("Select Router From V_Job_Header Where Job = '{0}' And Suffix = '{1}';",V.Global.sJob,V.Global.sSuffix,V.Local.sSQL)
+		F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL,V.Global.sRouter)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.Global.sRouter,<>,"")
+		F.Intrinsic.String.Build("Select ROUTER_LINE,PROCID,RID From GAB_4635_RTR_XREF Where Router = '{0}' Order By Router_Line;",V.Global.sRouter,V.Local.sSQL)
+		F.Data.DataTable.CreateFromSQL("dtRouterXRefData","con",V.Local.sSQL,True)
+		F.Intrinsic.String.Build("Select * From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}';",V.Global.sJob,V.Global.sSuffix,V.Local.sSQL)
+		F.Data.DataTable.CreateFromSQL("dtWOXRef","con",V.Local.sSQL,True)
+		F.Data.DataTable.DeleteRow("dtWOXRef")
+		F.ODBC.Connection!con.ExecuteAndReturn("Select MAX(WOID) From GAB_4635_WO_XREF;",V.Local.iWOID)
+		F.Intrinsic.Control.For(V.Local.iCnt,0,V.DataTable.dtRouterXRefData.RowCount--,1)
+			F.Data.DataTable.AddRow("dtWOXRef","WOID",V.Local.iWOID.++,"JOB",V.Global.sJob,"SUFFIX",V.Global.sSuffix,"SEQ",V.DataTable.dtRouterXRefData(V.Local.iCnt).ROUTER_LINE!FieldVal,"PROCID",V.DataTable.dtRouterXRefData(V.Local.iCnt).PROCID!FieldVal,"ROUTER",V.Global.sRouter,"RID",V.DataTable.dtRouterXRefData(V.Local.iCnt).RID!FieldVal)
+		F.Intrinsic.Control.Next(V.Local.iCnt)
+		F.Intrinsic.String.Build("Delete From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}';",V.Global.sJob,V.Global.sSuffix,V.Local.sSQL)
+		F.ODBC.Connection!con.Execute(V.Local.sSQL)
+		F.Data.DataTable.SaveToDB("dtWOXRef","con","GAB_4635_WO_XREF","WOID*!*JOB*!*SUFFIX")
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Connection!con.Close
+Program.Sub.SaveWOXRef.End
+
+Program.Sub.LoadSubProcessView.Start
+	V.Local.sSQL.Declare
+	
+	Gui.frmChemProc..Caption("Sub Process View")
+	
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.String.Build("Select A.ProcID,Router,Job,Suffix,Seq,Process_Name,Steps,Chemical,Pcs_Per_Rack,Duration,Interval,Description From GAB_4635_WO_XREF A Join GAB_4635_CHEM_SETUP B On A.PROCID = B.PROCID Where Job = '{0}' And Suffix = '{1}' Order By Seq,Steps;",V.Global.sJob,V.Global.sSuffix,V.Local.sSQL)
+	F.Data.DataTable.CreateFromSQL("dtChemProc","con",V.Local.sSQL,True)
+	F.ODBC.Connection!con.Close
+	
+	Gui.frmChemProc.GsGCChemProc.ContextMenuAttach("CTXVIEW")
+	
+	Gui.frmChemProc.GsGCChemProc.AddGridViewFromDataTable("gvChemProc","dtChemProc")
+	Gui.frmChemProc.GsGCChemProc.MainView("gvChemProc")
+	Gui.frmChemProc.GsGCChemProc.SuspendLayout()
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","MultiSelect",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","AllowSort",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","AllowFilter",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","Editable",False)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","ReadOnly",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","ShowGroupPanel",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","EnableAppearanceOddRow",True)
+	Gui.frmChemProc.GsGCChemProc.SetGridViewProperty("gvChemProc","OptionsMenuShowAutoFilterRowItem",False)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","ProcID","Visible",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Router","Visible",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Job","Visible",False)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Suffix","Visible",False)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","ProcID","Caption","PROCID")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Router","Caption","Router")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Job","Caption","Job")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Suffix","Caption","Suffix")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Seq","Caption","Seq")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","Caption","Process Name")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","Caption","Steps")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","Caption","Sub Process")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","Caption","Pcs per Rack")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","Caption","Duration")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","Caption","Interval")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","Caption","Description")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","ProcID","MinWidth","50")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Router","MinWidth","50")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Job","MinWidth","50")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Suffix","MinWidth","30")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Seq","MinWidth","50")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","PROCID","MinWidth","60")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","MinWidth","150")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","MinWidth","60")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","MinWidth","120")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","MinWidth","80")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","MinWidth","80")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","MinWidth","80")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","MinWidth","200")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","ProcID","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Router","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Job","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Suffix","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Seq","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","HeaderFontBold",True)
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","HeaderFontBold",True)
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","ProcID","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Router","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Job","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Suffix","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Seq","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","HeaderHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Description","HeaderHAlignment","Center")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","ProcID","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Router","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Job","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Suffix","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Seq","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Process_Name","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Steps","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Chemical","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Pcs_Per_Rack","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Duration","CellHAlignment","Center")
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Interval","CellHAlignment","Center")
+	
+	Gui.frmChemProc.GsGCChemProc.SetColumnProperty("gvChemProc","Seq","GroupIndex",1)
+
+	Gui.frmChemProc.GsGCChemProc.ResumeLayout()
+Program.Sub.LoadSubProcessView.End
+
+Program.Sub.cmdSave3_Click.Start
+	V.Local.iPROCID.Declare
+	V.Local.sProcessName.Declare
+	V.Local.sSQL.Declare
+
+	'Save Global Data
+	V.Local.iPROCID.Set(V.DataTable.dtChemProc(0).PROCID!FieldVal)
+	V.Local.sProcessName.Set(V.DataTable.dtChemProc(0).PROCESS_NAME!FieldVal)
+	'Save data to setup table
+	F.Intrinsic.Control.CallSub(cmdSave_Click)
+	'Delete From Work Order table for existing data
+	F.Intrinsic.String.Build("Delete From GAB_4635_WO_XREF Where Job = '{0}' And Suffix = '{1}' And Seq = '{2}';",V.Global.sJob,V.Global.sSuffix,V.Global.sSeq,V.Local.sSQL)
+	'Save to Work Order table
+	F.ODBC.Connection!con.OpenCompanyConnection(300)
+	F.Intrinsic.Control.If(V.Global.iWOID,=,-1)
+		F.ODBC.Connection!con.ExecuteAndReturn("Select MAX(WOID) From GAB_4635_WO_XREF;",V.Global.iWOID)
+		F.Data.DataTable.SetValue("dtWOXRef",-1,"WOID",V.Global.iWOID.++)
+	F.Intrinsic.Control.EndIf
+	F.Data.DataTable.SetValue("dtWOXRef",-1,"PROCID",V.Local.iPROCID)
+	F.Data.DataTable.SaveToDB("dtWOXRef","con","GAB_4635_WO_XREF","WOID*!*JOB*!*SUFFIX*!*SEQ")
+	F.ODBC.Connection!con.Close
+	'Calculate Setup
+	F.Intrinsic.Control.CallSub(CalculateSetup,"PROCID",V.Local.iPROCID)
+	'Save values to Router Screen
+	V.Passed.000012.Set(V.Global.fSetup)'Setup
+	V.Passed.000007.Set(V.Local.sProcessName)'Description
+	'Close screen
+	F.Intrinsic.Control.CallSub(frmChemProc_UnLoad)
+Program.Sub.cmdSave3_Click.End
